@@ -62,10 +62,19 @@ button:hover {
 h2 {
     margin-top: 20px;
     font-size: 22px;
-    color: #3cabe7;
     text-align: center;
 }
+.safe {
+    color: #AED6F1;  
+}
 
+.warning {
+    color: #e67e22;  
+}
+
+.danger {
+    color: #c0392b;   
+}
 /* Footer */
 footer {
     max-width: 600px;         
@@ -104,6 +113,7 @@ footer {
         padding: 15px;
     }
 }
+
 
 
 
