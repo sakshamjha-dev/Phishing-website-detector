@@ -42,11 +42,13 @@ def check_url(url):
     # Final result
     if score <= 1:
         return "THIS WEBSITE IS 100% SAFE."
+         result_type="safe"
     elif score <= 3:
         return "THIS WEBSITE SEEMS SUSPICIOUS."
+         result_type="warning"
     else:
         return "THS WEBSITE IS DANGEROUS.DO NOT ENTER YOUR PERSONAL INFORMATION HERE."
-
+         result_type="danger"
 
 # -----------------------------
 # HOME PAGE ROUTE
@@ -67,4 +69,5 @@ def index():
 # -----------------------------
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
 
