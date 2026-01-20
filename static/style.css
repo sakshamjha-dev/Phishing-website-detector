@@ -64,17 +64,6 @@ h2 {
     font-size: 22px;
     text-align: center;
 }
-.safe {
-    color: #AED6F1;  
-}
-
-.warning {
-    color: #e67e22;  
-}
-
-.danger {
-    color: #c0392b;   
-}
 /* Footer */
 footer {
     max-width: 600px;         
@@ -113,6 +102,7 @@ footer {
         padding: 15px;
     }
 }
+
 
 
 
