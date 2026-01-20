@@ -40,10 +40,6 @@ def check_url(url):
             score += 1
 
     # Final result
- def check_website(url):
-    # Example logic for demonstration
-    score = 2  # Replace this with your real phishing check
-
     if score <= 1:
         return "THIS WEBSITE IS 100% SAFE."
     elif score <= 3:
@@ -71,8 +67,3 @@ def index():
 # -----------------------------
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-
-
-
-
-
