@@ -1,22 +1,106 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f2f2f2;
-    padding-top: 50px;
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* adjust opacity if needed */
+    z-index: -1;
 }
 
-input {
-    width: 60%;
-    padding: 12px;
-    font-size: 16px;
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: rgba(255, 255, 255, 0.95); /* semi-transparent white */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 18px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.6);
 }
 
 button {
-    padding: 12px 30px;
-    font-size: 16px;
+    padding: 18px 35px;
+    font-size: 22px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2ecc71;
 }
 
 h2 {
     margin-top: 30px;
+    font-size: 24px;
+    color: #e74c3c; /* red for danger by default, you can change dynamically in Flask if needed */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #2c3e50;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 20px 20px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 30px 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
+    }
+    input[type="text"], button {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+    }
 }
