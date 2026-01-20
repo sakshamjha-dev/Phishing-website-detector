@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('Gemini_Generated_Image_4emrv74emrv74emr.png'); 
+    background-image: url('/static/Gemini_Generated_Image_4emrv74emrv74emr.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -104,4 +104,5 @@ footer {
         padding: 15px;
     }
 }
+
 
