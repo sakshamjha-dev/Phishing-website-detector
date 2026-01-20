@@ -61,7 +61,8 @@ button:hover {
 h2 {
     margin-top: 20px;
     font-size: 22px;
-    color: #e74c3c;
+    color: #3cabe7;
+    text-align: center;
 }
 
 /* Footer */
@@ -102,6 +103,7 @@ footer {
         padding: 15px;
     }
 }
+
 
 
 
